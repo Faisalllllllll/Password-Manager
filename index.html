@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret-Everything Secured</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <nav>
+
+<!-- Logo -->
+      <div class="logo">  
+        <div class="logo-shape"><img class="img-logo" src="padlock.png" alt="Avatar"></div>
+      </div>
+
+<!-- NAV -->
+<ul>
+    <li><a href="#">Home<ion-icon size="small" name="home-outline"></ion-icon></a> </li>
+    <li><a href="#">Call<ion-icon size="small" name="call-outline"></ion-icon></a> </li>
+    <li><a href="#">About<ion-icon size="small" name="alert-circle-outline"></ion-icon></a> </li>
+</ul>
+    </nav>
+
+<!-- Container -->
+    <div class="container">
+
+<!-- Tag -->
+<div class="content">
+  <h2>Secure</h2>
+  <h2>Secure</h2>
+</div>
+<!-- Heading -->
+<h1 class="text">Password Manager</h1>
+
+
+<!-- Table -->
+        <h3>Your passwords<span id="alert">(Your password has been Copied)</span></h3>
+        <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>website</th>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>CWM</td>
+                <td>aishikim06@gmail.com</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+              </tr>
+            
+            </tbody>
+          </table>
+
+        <h3>Add a password</h3>
+
+<!-- Form -->
+        <form action="/submit" method="post">
+            <!-- Text input for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <!-- Text input for website -->
+            <label for="website">website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+        
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+        
+           
+        
+            <!-- Submit button -->
+            <button class="btn" type="submit">Submit</button>
+          </form>
+    </div>
+
+<!-- Scripts -->
+
+<!-- Heading Script -->
+<script>
+  let text=document.querySelector('.text');
+  text.innerHTML = text.innerText.split('').map((letters, i)=> `<span style="transition-delay:${i * 40}ms;filter
+  :hue-rotate(${i * 30}deg)">${letters}</span>`).join('');
+</script>
+<!-- Heading Script end -->
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>  
+
+</body>
+</html>
